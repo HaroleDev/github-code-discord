@@ -74,29 +74,34 @@ html.theme-light .force-theme.theme-light {
     --syntax-green: #1a7f37;
 }
 
-#app-mount [class^=container-] pre {
+#app-mount .container-rr3Ruk {
+    border: 1px solid var(--base-border);
+    border-radius: var(--border-radius);
+    background: var(--background);
+}
+
+#app-mount .container-rr3Ruk pre {
+    margin: 0;
+}
+
+#app-mount .container-rr3Ruk pre code {
     border: none;
 }
 
-#app-mount [class^=message-] pre {
-    font-size: var(--font-size-sm);
+#app-mount .message-2CShn3 pre {
+    font-size: var(--font-size);
 }
 
-#app-mount [class^=message-] pre {
-    font-size: var(--font-size-sm);
+#app-mount .message-2CShn3 pre {
+    font-size: var(--font-size);
 }
 
-#app-mount [class^=message-] pre ::before {
-    font-size: var(--font-size-sm);
+#app-mount .message-2CShn3 pre ::before {
+    font-size: var(--font-size);
 }
 
-#app-mount [class^=message-] pre::before {
-    font-size: var(--font-size-sm);
-}
-
-.powercord-lines,
-.powercord-block-lang {
-    display: none;
+#app-mount .message-2CShn3 pre::before {
+    font-size: var(--font-size);
 }
 
 #app-mount pre [class~=hljs]::before {
@@ -1094,7 +1099,7 @@ html.theme-light .force-theme.theme-light {
     overflow: hidden;
     color: var(--text-muted);
     background: var(--background);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size);
     z-index: 1;
 }
 
