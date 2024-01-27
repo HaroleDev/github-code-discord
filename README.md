@@ -1,8 +1,9 @@
 <h1 align="center">GitHub-styled Code Blocks for Discord</h1>
 <p align="center">GitHub-styled code blocks for Discord. Forked from the <a href="https://github.com/DiscordStyles/Slate">Slate</a> theme.</p>
 
-![GitHub-styled Code Blocks (Discord Light)][https://github.com/HaroleDev/github-code-discord/blob/master/src/screenshots/screenshot_light.png?raw=true]
-![GitHub-styled Code Blocks (Discord Dark)][https://github.com/HaroleDev/github-code-discord/blob/master/src/screenshots/screenshot_dark.png?raw=true]
+![GitHub-styled Code Blocks (Discord Light)](https://github.com/HaroleDev/github-code-discord/blob/master/src/screenshots/screenshot_light.png?raw=true)
+
+![GitHub-styled Code Blocks (Discord Dark)](https://github.com/HaroleDev/github-code-discord/blob/master/src/screenshots/screenshot_dark.png?raw=true)
 
 ---
 
