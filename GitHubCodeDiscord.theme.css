@@ -7,7 +7,7 @@
  * @source https://github.com/HaroleDev/github-code-discord
  */
 
- :root {
+:root {
     --border-radius: 3px;
     --spacing-third: calc(var(--spacing) / 3);
     --spacing-half: calc(var(--spacing) / 2);
