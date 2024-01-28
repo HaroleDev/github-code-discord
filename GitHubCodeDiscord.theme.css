@@ -2,7 +2,7 @@
  * @name GitHub Code Blocks
  * @author Harole
  * @description GitHub-styled code blocks for Discord. Forked from the Slate theme.
- * @version 1.3
+ * @version 1.3.1
  * @authorLink https://haroleethan.studio.site
  * @source https://github.com/HaroleDev/github-code-discord
  */
@@ -52,7 +52,7 @@ html.theme-dark .force-theme.theme-light {
     --syntax-orange: #f0883e;
     --syntax-green: #3fb950;
 
-    --button-background-rest: #212d26;
+    --button-background-rest: #21262d;
     --button-border-rest: #f0f6fc1a;
 
     --button-background-hover: #30363d;
