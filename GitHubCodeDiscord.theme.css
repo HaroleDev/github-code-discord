@@ -51,6 +51,18 @@ html.theme-dark .force-theme.theme-light {
     --syntax-grey-alt: #c9d1d9;
     --syntax-orange: #f0883e;
     --syntax-green: #3fb950;
+
+    --button-background-rest: #212d26;
+    --button-border-rest: #f0f6fc1a;
+
+    --button-background-hover: #30363d;
+    --button-border-hover: #8b949e;
+
+    --button-background-active: #282e33;
+    --button-border-active: #6e7681;
+
+    --button-shadow-rest: transparent 0px 0px;
+    --button-shadow-active: transparent 0px 0px;
 }
 
 .theme-light,
@@ -59,7 +71,7 @@ html.theme-light .force-theme.theme-light {
     --base-border: #d0d7de;
     --secondary-border: #8c959f;
     --text-normal: #24292e;
-    --text-muted: #6a737d;
+    --text-muted: #656d76;
     --text-focus: #000000;
     --background-light: #f6f8fa;
     --background-alt: #ffffff;
@@ -72,6 +84,18 @@ html.theme-light .force-theme.theme-light {
     --syntax-grey-alt: #24292f;
     --syntax-orange: #bc4c00;
     --syntax-green: #1a7f37;
+
+    --button-background-rest: #f6f8fa;
+    --button-border-rest: #d0d7de;
+
+    --button-background-hover: #eef1f4;
+    --button-border-hover: var(--button-border-rest);
+
+    --button-background-active: #e7ebef;
+    --button-border-active: var(--button-border-hover);
+
+    --button-shadow-rest: 0px 1px 0px 0px rgba(27, 31, 35, 0.04);
+    --button-shadow-active: 0px 2px 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 #app-mount .container-rr3Ruk {
@@ -173,7 +197,7 @@ html.theme-light .force-theme.theme-light {
     content: "Awk";
 }
 
-#app-mount pre code[class~=x++ i]::before,
+#app-mount pre code[class~=x++i]::before,
 #app-mount pre code[class~=axapta i]::before {
     content: "X++";
 }
@@ -249,8 +273,8 @@ html.theme-light .force-theme.theme-light {
 #app-mount pre code[class~=hxx i]::before,
 #app-mount pre code[class~=hh i]::before,
 #app-mount pre code[class~=hpp i]::before,
-#app-mount pre code[class~=h++ i]::before,
-#app-mount pre code[class~=c++ i]::before,
+#app-mount pre code[class~=h++i]::before,
+#app-mount pre code[class~=c++i]::before,
 #app-mount pre code[class~=cc i]::before,
 #app-mount pre code[class~=cpp i]::before {
     content: "C++";
@@ -688,8 +712,8 @@ html.theme-light .force-theme.theme-light {
     content: "NSIS";
 }
 
-#app-mount pre code[class~=objective-c++ i]::before,
-#app-mount pre code[class~=obj-c++ i]::before,
+#app-mount pre code[class~=objective-c++i]::before,
+#app-mount pre code[class~=obj-c++i]::before,
 #app-mount pre code[class~=obj-c i]::before,
 #app-mount pre code[class~=objc i]::before,
 #app-mount pre code[class~=mm i]::before,
@@ -1136,7 +1160,7 @@ html.theme-light .force-theme.theme-light {
 
 #app-mount pre code::after {
     content: "";
-    width: 46px;
+    width: 42px;
     height: 46px;
     position: absolute;
     top: 0;
@@ -1333,6 +1357,7 @@ html.theme-light .force-theme.theme-light {
 #app-mount [class^=modalTextContainer] pre code::before,
 #app-mount [class^=modalTextContainer] pre code::after {
     position: fixed;
+    border-radius: 8px 8px 0 0;
 }
 
 #app-mount pre .hljs-built_in,
@@ -1382,4 +1407,71 @@ html.theme-light .force-theme.theme-light {
 #app-mount pre .hljs-comment,
 #app-mount pre .hljs-quote {
     color: var(--syntax-grey);
+}
+
+/* Copy Button */
+#app-mount pre [class^=codeActions] {
+    z-index: 3;
+    display: block;
+}
+
+#app-mount pre [class^=codeActions] div svg {
+    display: none;
+}
+
+#app-mount pre [class^=codeActions] div::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--button-background-rest);
+    border: 1px solid var(--button-border-rest);
+    box-shadow: var(--button-shadow-rest);
+    margin-right: 46px;
+    margin-top: -3px;
+    z-index: 1;
+}
+
+#app-mount pre [class^=codeActions]:hover div::before {
+    background-color: var(--button-background-hover);
+    border: 1px solid var(--button-border-hover);
+    box-shadow: var(--button-shadow-rest);
+}
+
+#app-mount pre [class^=codeActions]:active div::before {
+    background-color: var(--button-background-active);
+    border: 1px solid var(--button-border-active);
+    box-shadow: var(--button-shadow-active);
+}
+
+#app-mount pre [class^=codeActions] div::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 47px;
+    margin-top: -2px;
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>') center/16px no-repeat;
+    mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>') center/16px no-repeat;
+    background: var(--text-normal);
+    z-index: 1;
+}
+
+#app-mount pre {
+    cursor: url('data:image/svg+xml; utf-8,<svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_313_1274)"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 17.015V1L14.591 12.619H7.81L7.399 12.743L3 17.015Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0845 17.6893L8.47949 19.2243L3.79749 8.1353L7.48349 6.5823L12.0845 17.6893Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.751 17.0086L8.90701 17.7826L5.80701 10.4086L7.64801 9.6336L10.751 17.0086Z" fill="black"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4 3.4071V14.5951L6.969 11.7291L7.397 11.5901H12.165L4 3.4071Z" fill="black"/></g><defs><filter id="filter0_d_313_1274" x="0" y="0" width="17.5909" height="24.2243" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="2"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.402655 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_313_1274"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_313_1274" result="shape"/></filter></defs></svg>'), default;
+}
+
+#app-mount pre code * {
+    cursor: url('data:image/svg+xml; utf-8,<svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_313_1253)"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.01404 3L8.01404 14.993H9.00004V3H8.01404Z" fill="black"/><path fill-rule="evenodd" clip-rule="evenodd" d="M7 9V9.984H10V9H7Z" fill="black"/><path d="M9 3.5C9.19256 3.04209 9.84981 2.33692 10.2764 2.10339C10.68 1.88084 11.0951 1.69127 11.4918 1.59145C11.9772 1.46781 13 1.50536 13 1.50536" stroke="black"/><path d="M8 3.5C7.82142 3.01964 7.08491 2.28308 6.75693 2.08271C6.36475 1.84481 5.92938 1.6911 5.52787 1.59136C5.03531 1.46784 4 1.50536 4 1.50536" stroke="black"/><path d="M9 14.5C9.19256 14.9579 9.84981 15.6631 10.2764 15.8966C10.68 16.1192 11.0951 16.3087 11.4918 16.4086C11.9772 16.5322 13 16.4946 13 16.4946" stroke="black"/><path d="M8 14.5C7.82142 14.9804 7.08491 15.7169 6.75693 15.9173C6.36475 16.1552 5.92938 16.3089 5.52787 16.4086C5.03531 16.5322 4 16.4946 4 16.4946" stroke="black"/></g><defs><filter id="filter0_d_313_1253" x="0.981934" y="0" width="15.0364" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="2"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.402655 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_313_1253"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_313_1253" result="shape"/></filter></defs></svg>'), text;
+}
+
+#app-mount pre [class^=codeActions]:hover,
+#app-mount pre [class^=codeActions]:active {
+    cursor: url('data:image/svg+xml; utf-8,<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_313_1246)"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.3315 13.3799C6.0475 13.0209 5.7025 12.2869 5.0885 11.3959C4.7405 10.8919 3.8775 9.9429 3.6205 9.4609C3.3975 9.0349 3.4215 8.8439 3.4745 8.4909C3.5685 7.8629 4.2125 7.3739 4.8995 7.4399C5.4185 7.4889 5.8585 7.8319 6.2545 8.1559C6.4935 8.3509 6.7875 8.7299 6.9645 8.9439C7.1275 9.1399 7.1675 9.2209 7.3415 9.4529C7.5715 9.7599 7.6435 9.9119 7.5555 9.5739C7.4845 9.0779 7.3685 8.2309 7.2005 7.4819C7.0725 6.9139 7.0415 6.8249 6.9195 6.3889C6.7905 5.9249 6.7245 5.5999 6.6035 5.1079C6.5195 4.7599 6.3685 4.0489 6.3275 3.6489C6.2705 3.1019 6.2405 2.2099 6.5915 1.7999C6.8665 1.4789 7.4975 1.3819 7.8885 1.5799C8.4005 1.8389 8.6915 2.5829 8.8245 2.8799C9.0635 3.4139 9.2115 4.0309 9.3405 4.8409C9.5045 5.8719 9.8065 7.3029 9.8165 7.6039C9.8405 7.2349 9.7485 6.4579 9.8125 6.1039C9.8705 5.7829 10.1405 5.4099 10.4785 5.3089C10.7645 5.2239 11.0995 5.1929 11.3945 5.2539C11.7075 5.3179 12.0375 5.5419 12.1605 5.7529C12.5225 6.3769 12.5295 7.6519 12.5445 7.5839C12.6305 7.2079 12.6155 6.3549 12.8285 5.9999C12.9685 5.7659 13.3255 5.5549 13.5155 5.5209C13.8095 5.4689 14.1705 5.4529 14.4795 5.5129C14.7285 5.5619 15.0655 5.8579 15.1565 5.9999C15.3745 6.3439 15.4985 7.3169 15.5355 7.6579C15.5505 7.7989 15.6095 7.2659 15.8285 6.9219C16.2345 6.2829 17.6715 6.1589 17.7265 7.5609C17.7515 8.2149 17.7465 8.1849 17.7465 8.6249C17.7465 9.1419 17.7345 9.4529 17.7065 9.8269C17.6755 10.2269 17.5895 11.1309 17.4645 11.5689C17.3785 11.8699 17.0935 12.5469 16.8125 12.9529C16.8125 12.9529 15.7385 14.2029 15.6215 14.7659C15.5035 15.3279 15.5425 15.3319 15.5195 15.7309C15.4965 16.1289 15.6405 16.6529 15.6405 16.6529C15.6405 16.6529 14.8385 16.7569 14.4065 16.6879C14.0155 16.6249 13.5315 15.8469 13.4065 15.6089C13.2345 15.2809 12.8675 15.3439 12.7245 15.5859C12.4995 15.9689 12.0155 16.6559 11.6735 16.6989C11.0055 16.7829 9.6195 16.7299 8.5345 16.7189C8.5345 16.7189 8.7195 15.7079 8.3075 15.3609C8.0025 15.1019 7.4775 14.5769 7.1635 14.3009L6.3315 13.3799Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.3315 13.3799C6.0475 13.0209 5.7025 12.2869 5.0885 11.3959C4.7405 10.8919 3.8775 9.9429 3.6205 9.4609C3.3975 9.0349 3.4215 8.8439 3.4745 8.4909C3.5685 7.8629 4.2125 7.3739 4.8995 7.4399C5.4185 7.4889 5.8585 7.8319 6.2545 8.1559C6.4935 8.3509 6.7875 8.7299 6.9645 8.9439C7.1275 9.1399 7.1675 9.2209 7.3415 9.4529C7.5715 9.7599 7.6435 9.9119 7.5555 9.5739C7.4845 9.0779 7.3685 8.2309 7.2005 7.4819C7.0725 6.9139 7.0415 6.8249 6.9195 6.3889C6.7905 5.9249 6.7245 5.5999 6.6035 5.1079C6.5195 4.7599 6.3685 4.0489 6.3275 3.6489C6.2705 3.1019 6.2405 2.2099 6.5915 1.7999C6.8665 1.4789 7.4975 1.3819 7.8885 1.5799C8.4005 1.8389 8.6915 2.5829 8.8245 2.8799C9.0635 3.4139 9.2115 4.0309 9.3405 4.8409C9.5045 5.8719 9.8065 7.3029 9.8165 7.6039C9.8405 7.2349 9.7485 6.4579 9.8125 6.1039C9.8705 5.7829 10.1405 5.4099 10.4785 5.3089C10.7645 5.2239 11.0995 5.1929 11.3945 5.2539C11.7075 5.3179 12.0375 5.5419 12.1605 5.7529C12.5225 6.3769 12.5295 7.6519 12.5445 7.5839C12.6305 7.2079 12.6155 6.3549 12.8285 5.9999C12.9685 5.7659 13.3255 5.5549 13.5155 5.5209C13.8095 5.4689 14.1705 5.4529 14.4795 5.5129C14.7285 5.5619 15.0655 5.8579 15.1565 5.9999C15.3745 6.3439 15.4985 7.3169 15.5355 7.6579C15.5505 7.7989 15.6095 7.2659 15.8285 6.9219C16.2345 6.2829 17.6715 6.1589 17.7265 7.5609C17.7515 8.2149 17.7465 8.1849 17.7465 8.6249C17.7465 9.1419 17.7345 9.4529 17.7065 9.8269C17.6755 10.2269 17.5895 11.1309 17.4645 11.5689C17.3785 11.8699 17.0935 12.5469 16.8125 12.9529C16.8125 12.9529 15.7385 14.2029 15.6215 14.7659C15.5035 15.3279 15.5425 15.3319 15.5195 15.7309C15.4965 16.1289 15.6405 16.6529 15.6405 16.6529C15.6405 16.6529 14.8385 16.7569 14.4065 16.6879C14.0155 16.6249 13.5315 15.8469 13.4065 15.6089C13.2345 15.2809 12.8675 15.3439 12.7245 15.5859C12.4995 15.9689 12.0155 16.6559 11.6735 16.6989C11.0055 16.7829 9.6195 16.7299 8.5345 16.7189C8.5345 16.7189 8.7195 15.7079 8.3075 15.3609C8.0025 15.1019 7.4775 14.5769 7.1635 14.3009L6.3315 13.3799V13.3799Z" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5664 13.7344V10.2754" stroke="black" stroke-width="0.75" stroke-linecap="round"/><path d="M12.5508 13.7461L12.5348 10.2731" stroke="black" stroke-width="0.75" stroke-linecap="round"/><path d="M10.5547 10.3047L10.5757 13.7307" stroke="black" stroke-width="0.75" stroke-linecap="round"/></g><defs><filter id="filter0_d_313_1246" x="0.0637207" y="0.102409" width="21.0582" height="22.0181" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="2"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.402655 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_313_1246"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_313_1246" result="shape"/></filter></defs></svg>'), pointer;
 }
