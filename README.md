@@ -5,6 +5,8 @@
 
 ![GitHub-styled Code Blocks (Discord Dark)](https://github.com/HaroleDev/github-code-discord/blob/master/src/screenshots/screenshot_dark.png?raw=true)
 
+<p align="center"><a href="https://discord-preview.vercel.app/?file=https://raw.githack.com/HaroleDev/github-code-discord/master/GitHubCodeDiscord.theme.css">Demo</a></p>
+
 ---
 
 ## Features
