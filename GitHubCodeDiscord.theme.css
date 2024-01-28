@@ -1398,19 +1398,20 @@ html.theme-light .force-theme.theme-light {
 #app-mount pre .hljs-type,
 #app-mount pre .hljs-variable {
     color: var(--syntax-orange);
-    font-style: normal !important;
 }
 
 #app-mount pre .hljs-addition,
 #app-mount pre .hljs-keyword,
 #app-mount pre .hljs-selector-tag {
     color: var(--syntax-green);
-    font-style: normal !important;
 }
 
 #app-mount pre .hljs-comment,
 #app-mount pre .hljs-quote {
     color: var(--syntax-grey);
+}
+
+#app-mount pre [class^=hljs-] {
     font-style: normal !important;
 }
 
