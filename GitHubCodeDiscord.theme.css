@@ -1368,6 +1368,7 @@ html.theme-light .force-theme.theme-light {
 #app-mount pre .hljs-regexp,
 #app-mount pre .hljs-selector-class {
     color: var(--syntax-purple);
+    font-style: normal !important;
 }
 
 #app-mount pre .hljs-attribute,
@@ -1378,6 +1379,7 @@ html.theme-light .force-theme.theme-light {
 #app-mount pre .hljs-string,
 #app-mount pre .hljs-title {
     color: var(--syntax-blue);
+    font-style: normal !important;
 }
 
 #app-mount pre .hljs-attr,
@@ -1396,17 +1398,20 @@ html.theme-light .force-theme.theme-light {
 #app-mount pre .hljs-type,
 #app-mount pre .hljs-variable {
     color: var(--syntax-orange);
+    font-style: normal !important;
 }
 
 #app-mount pre .hljs-addition,
 #app-mount pre .hljs-keyword,
 #app-mount pre .hljs-selector-tag {
     color: var(--syntax-green);
+    font-style: normal !important;
 }
 
 #app-mount pre .hljs-comment,
 #app-mount pre .hljs-quote {
     color: var(--syntax-grey);
+    font-style: normal !important;
 }
 
 /* Copy Button */
