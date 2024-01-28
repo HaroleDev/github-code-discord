@@ -23,3 +23,7 @@
 ## License
 
 See the [LICENSE](./LICENSE.md) file for license rights and limitations (MIT).
+
+## Credits
+
+List of supported languages from [highlight.js](http://highlightjs.org)

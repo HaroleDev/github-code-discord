@@ -2,7 +2,7 @@
  * @name GitHub Code Blocks
  * @author Harole
  * @description GitHub-styled code blocks for Discord. Forked from the Slate theme.
- * @version 1.1.1
+ * @version 1.3
  * @authorLink https://haroleethan.studio.site
  * @source https://github.com/HaroleDev/github-code-discord
  */
@@ -93,964 +93,970 @@ html.theme-light .force-theme.theme-light {
     font-size: var(--font-size);
 }
 
-#app-mount pre [class~=hljs]::before {
+#app-mount pre code[class~=hljs]::before {
     content: "Plain Text";
 }
 
-#app-mount pre [class~=1c i]::before {
+#app-mount pre code[class~=1c i]::before {
     content: "1C:Enterprise";
 }
 
-#app-mount pre [class~=accesslog i]::before {
+#app-mount pre code[class~=accesslog i]::before {
     content: "Apache Access Log";
 }
 
-#app-mount pre [class~=abnf i]::before {
+#app-mount pre code[class~=abnf i]::before {
     content: "Augmented Backus-Naur Form";
 }
 
-#app-mount pre [class~=as i]::before,
-#app-mount pre [class~=actionscript i]::before {
+#app-mount pre code[class~=as i]::before,
+#app-mount pre code[class~=actionscript i]::before {
     content: "ActionScript";
 }
 
-#app-mount pre [class~=ada i]::before {
+#app-mount pre code[class~=ada i]::before {
     content: "Ada";
 }
 
-#app-mount pre [class~=asc i]::before,
-#app-mount pre [class~=angelscript i]::before {
+#app-mount pre code[class~=asc i]::before,
+#app-mount pre code[class~=angelscript i]::before {
     content: "AngelScript";
 }
 
-#app-mount pre [class~=apache i]::before,
-#app-mount pre [class~=apacheconf i]::before {
+#app-mount pre code[class~=apache i]::before,
+#app-mount pre code[class~=apacheconf i]::before {
     content: "Apache config";
 }
 
-#app-mount pre [class~=applescript i]::before,
-#app-mount pre [class~=osascript i]::before {
+#app-mount pre code[class~=applescript i]::before,
+#app-mount pre code[class~=osascript i]::before {
     content: "AppleScript";
 }
 
-#app-mount pre [class~=arcade i]::before {
+#app-mount pre code[class~=arcade i]::before {
     content: "ArcGIS Arcade";
 }
 
-#app-mount pre [class~=ino i]::before,
-#app-mount pre [class~=arduino i]::before {
+#app-mount pre code[class~=ino i]::before,
+#app-mount pre code[class~=arduino i]::before {
     content: "Arduino";
 }
 
-#app-mount pre [class~=arm i]::before,
-#app-mount pre [class~=armasm i]::before {
+#app-mount pre code[class~=arm i]::before,
+#app-mount pre code[class~=armasm i]::before {
     content: "ARM Assembly";
 }
 
-#app-mount pre [class~=adoc i]::before,
-#app-mount pre [class~=asciidoc i]::before {
+#app-mount pre code[class~=adoc i]::before,
+#app-mount pre code[class~=asciidoc i]::before {
     content: "AsciiDoc";
 }
 
-#app-mount pre [class~=aspectj i]::before {
+#app-mount pre code[class~=aspectj i]::before {
     content: "AspectJ";
 }
 
-#app-mount pre [class~=ahk i]::before,
-#app-mount pre [class~=autohotkey i]::before {
+#app-mount pre code[class~=ahk i]::before,
+#app-mount pre code[class~=autohotkey i]::before {
     content: "AutoHotkey";
 }
 
-#app-mount pre [class~=autoit i]::before {
+#app-mount pre code[class~=autoit i]::before {
     content: "AutoIt";
 }
 
-#app-mount pre [class~=avrasm i]::before {
+#app-mount pre code[class~=avrasm i]::before {
     content: "AVR Assembly";
 }
 
-#app-mount pre [class~=awk i]::before {
+#app-mount pre code[class~=awk i]::before {
     content: "Awk";
 }
 
-#app-mount pre [class~=x++i]::before,
-#app-mount pre [class~=axapta i]::before {
+#app-mount pre code[class~=x++ i]::before,
+#app-mount pre code[class~=axapta i]::before {
     content: "X++";
 }
 
-#app-mount pre [class~=sh i]::before,
-#app-mount pre [class~=bash i]::before {
+#app-mount pre code[class~=sh i]::before,
+#app-mount pre code[class~=bash i]::before {
     content: "Bash";
 }
 
-#app-mount pre [class~=basic i]::before {
+#app-mount pre code[class~=basic i]::before {
     content: "BASIC";
 }
 
-#app-mount pre [class~=bnf i]::before {
+#app-mount pre code[class~=bnf i]::before {
     content: "Backus–Naur Form";
 }
 
-#app-mount pre [class~=bf i]::before,
-#app-mount pre [class~=brainfuck i]::before {
+#app-mount pre code[class~=bf i]::before,
+#app-mount pre code[class~=brainfuck i]::before {
     content: "Brainfuck";
 }
 
-#app-mount pre [class~=cal i]::before {
+#app-mount pre code[class~=cal i]::before {
     content: "C/AL";
 }
 
-#app-mount pre [class~=capnp i]::before,
-#app-mount pre [class~=capnproto i]::before {
+#app-mount pre code[class~=capnp i]::before,
+#app-mount pre code[class~=capnproto i]::before {
     content: "Cap’n Proto";
 }
 
-#app-mount pre [class~=ceylon i]::before {
+#app-mount pre code[class~=ceylon i]::before {
     content: "Ceylon";
 }
 
-#app-mount pre [class~=icl i]::before,
-#app-mount pre [class~=dcl i]::before,
-#app-mount pre [class~=clean i]::before {
+#app-mount pre code[class~=icl i]::before,
+#app-mount pre code[class~=dcl i]::before,
+#app-mount pre code[class~=clean i]::before {
     content: "Clean";
 }
 
-#app-mount pre [class~=clj i]::before,
-#app-mount pre [class~=edn i]::before,
-#app-mount pre [class~=clojure i]::before {
+#app-mount pre code[class~=clj i]::before,
+#app-mount pre code[class~=edn i]::before,
+#app-mount pre code[class~=clojure i]::before {
     content: "Clojure";
 }
 
-#app-mount pre [class~=clojure-repl i]::before {
+#app-mount pre code[class~=clojure-repl i]::before {
     content: "Clojure REPL";
 }
 
-#app-mount pre [class~=cmake i]::before {
+#app-mount pre code[class~=cmake i]::before {
     content: "CMake";
 }
 
-#app-mount pre [class~=iced i]::before,
-#app-mount pre [class~=cson i]::before,
-#app-mount pre [class~=coffee i]::before,
-#app-mount pre [class~=coffeescript i]::before {
+#app-mount pre code[class~=iced i]::before,
+#app-mount pre code[class~=cson i]::before,
+#app-mount pre code[class~=coffee i]::before,
+#app-mount pre code[class~=coffeescript i]::before {
     content: "CoffeeScript";
 }
 
-#app-mount pre [class~=coq i]::before {
+#app-mount pre code[class~=coq i]::before {
     content: "Coq";
 }
 
-#app-mount pre [class~=cos i]::before,
-#app-mount pre [class~=cls i]::before {
+#app-mount pre code[class~=cos i]::before,
+#app-mount pre code[class~=cls i]::before {
     content: "Caché Object Script";
 }
 
-#app-mount pre [class~=cxx i]::before,
-#app-mount pre [class~=hxx i]::before,
-#app-mount pre [class~=hh i]::before,
-#app-mount pre [class~=hpp i]::before,
-#app-mount pre [class~=h++ i]::before,
-#app-mount pre [class~=c++ i]::before,
-#app-mount pre [class~=cc i]::before,
-#app-mount pre [class~=cpp i]::before {
+#app-mount pre code[class~=cxx i]::before,
+#app-mount pre code[class~=hxx i]::before,
+#app-mount pre code[class~=hh i]::before,
+#app-mount pre code[class~=hpp i]::before,
+#app-mount pre code[class~=h++ i]::before,
+#app-mount pre code[class~=c++ i]::before,
+#app-mount pre code[class~=cc i]::before,
+#app-mount pre code[class~=cpp i]::before {
     content: "C++";
 }
 
-#app-mount pre [class~=pcmk i]::before,
-#app-mount pre [class~=crmsh i]::before,
-#app-mount pre [class~=crm i]::before {
+#app-mount pre code[class~=pcmk i]::before,
+#app-mount pre code[class~=crmsh i]::before,
+#app-mount pre code[class~=crm i]::before {
     content: "crmsh";
 }
 
-#app-mount pre [class~=cr i]::before,
-#app-mount pre [class~=crystal i]::before {
+#app-mount pre code[class~=cr i]::before,
+#app-mount pre code[class~=crystal i]::before {
     content: "Crystal";
 }
 
-#app-mount pre [class~=cs i]::before,
-#app-mount pre [class~=csharp i]::before {
+#app-mount pre code[class~=cs i]::before,
+#app-mount pre code[class~=csharp i]::before {
     content: "C#";
 }
 
-#app-mount pre [class~=csp i]::before {
+#app-mount pre code[class~=csp i]::before {
     content: "CSP";
 }
 
-#app-mount pre [class~=css i]::before {
+#app-mount pre code[class~=css i]::before {
     content: "CSS";
 }
 
-#app-mount pre [class~=d i]::before {
+#app-mount pre code[class~=d i]::before {
     content: "D";
 }
 
-#app-mount pre [class~=dart i]::before {
+#app-mount pre code[class~=dart i]::before {
     content: "Dart";
 }
 
-#app-mount pre [class~=dfm i]::before,
-#app-mount pre [class~=dpr i]::before,
-#app-mount pre [class~=delphi i]::before {
+#app-mount pre code[class~=dfm i]::before,
+#app-mount pre code[class~=dpr i]::before,
+#app-mount pre code[class~=delphi i]::before {
     content: "Delphi";
 }
 
 /* Similar highlighting but renamed for familiarity */
-#app-mount pre [class~=pas i]::before,
-#app-mount pre [class~=pascal i]::before {
+#app-mount pre code[class~=pas i]::before,
+#app-mount pre code[class~=pascal i]::before {
     content: "Pascal";
 }
 
-#app-mount pre [class~=patch i]::before,
-#app-mount pre [class~=diff i]::before {
+#app-mount pre code[class~=patch i]::before,
+#app-mount pre code[class~=diff i]::before {
     content: "Diff";
 }
 
-#app-mount pre [class~=jinja i]::before,
-#app-mount pre [class~=django i]::before {
+#app-mount pre code[class~=jinja i]::before,
+#app-mount pre code[class~=django i]::before {
     content: "Django";
 }
 
-#app-mount pre [class~=zone i]::before,
-#app-mount pre [class~=bind i]::before,
-#app-mount pre [class~=dns i]::before {
+#app-mount pre code[class~=zone i]::before,
+#app-mount pre code[class~=bind i]::before,
+#app-mount pre code[class~=dns i]::before {
     content: "DNS Zone";
 }
 
-#app-mount pre [class~=docker i]::before,
-#app-mount pre [class~=dockerfile i]::before {
+#app-mount pre code[class~=docker i]::before,
+#app-mount pre code[class~=dockerfile i]::before {
     content: "Dockerfile";
 }
 
-#app-mount pre [class~=dos i]::before,
-#app-mount pre [class~=bat i]::before,
-#app-mount pre [class~=cmd i]::before {
+#app-mount pre code[class~=dos i]::before,
+#app-mount pre code[class~=bat i]::before,
+#app-mount pre code[class~=cmd i]::before {
     content: "Batch";
 }
 
-#app-mount pre [class~=dsconfig i]::before {
+#app-mount pre code[class~=dsconfig i]::before {
     content: "dsconfig";
 }
 
-#app-mount pre [class~=dts i]::before {
+#app-mount pre code[class~=dts i]::before {
     content: "Device Tree";
 }
 
-#app-mount pre [class~=dst i]::before,
-#app-mount pre [class~=dust i]::before {
+#app-mount pre code[class~=dst i]::before,
+#app-mount pre code[class~=dust i]::before {
     content: "Dust";
 }
 
-#app-mount pre [class~=ebnf i]::before {
+#app-mount pre code[class~=ebnf i]::before {
     content: "Extended Backus-Naur Form";
 }
 
-#app-mount pre [class~=ex i]::before,
-#app-mount pre [class~=exs i]::before,
-#app-mount pre [class~=elixir i]::before {
+#app-mount pre code[class~=ex i]::before,
+#app-mount pre code[class~=exs i]::before,
+#app-mount pre code[class~=elixir i]::before {
     content: "Elixir";
 }
 
-#app-mount pre [class~=elm i]::before {
+#app-mount pre code[class~=elm i]::before {
     content: "Elm";
 }
 
-#app-mount pre [class~=erb i]::before {
+#app-mount pre code[class~=erb i]::before {
     content: "ERB";
 }
 
-#app-mount pre [class~=erl i]::before,
-#app-mount pre [class~=erlang i]::before {
+#app-mount pre code[class~=erl i]::before,
+#app-mount pre code[class~=erlang i]::before {
     content: "Erlang";
 }
 
-#app-mount pre [class~=erlang-repl i]::before {
+#app-mount pre code[class~=erlang-repl i]::before {
     content: "Erlang REPL";
 }
 
-#app-mount pre [class~=xls i]::before,
-#app-mount pre [class~=xlsx i]::before,
-#app-mount pre [class~=excel i]::before {
+#app-mount pre code[class~=xls i]::before,
+#app-mount pre code[class~=xlsx i]::before,
+#app-mount pre code[class~=excel i]::before {
     content: "Excel Formulae";
 }
 
-#app-mount pre [class~=fix i]::before {
+#app-mount pre code[class~=fix i]::before {
     content: "Fix";
 }
 
-#app-mount pre [class~=flix i]::before {
+#app-mount pre code[class~=flix i]::before {
     content: "Flix";
 }
 
-#app-mount pre [class~=f90 i]::before,
-#app-mount pre [class~=f95 i]::before,
-#app-mount pre [class~=fortran i]::before {
+#app-mount pre code[class~=f90 i]::before,
+#app-mount pre code[class~=f95 i]::before,
+#app-mount pre code[class~=fortran i]::before {
     content: "Fortran";
 }
 
-#app-mount pre [class~=fsharp i]::before,
-#app-mount pre [class~=fs i]::before {
+#app-mount pre code[class~=fsharp i]::before,
+#app-mount pre code[class~=fs i]::before {
     content: "F#";
 }
 
-#app-mount pre [class~=gms i]::before,
-#app-mount pre [class~=gams i]::before {
+#app-mount pre code[class~=gms i]::before,
+#app-mount pre code[class~=gams i]::before {
     content: "GAMS";
 }
 
-#app-mount pre [class~=gss i]::before,
-#app-mount pre [class~=gauss i]::before {
+#app-mount pre code[class~=gss i]::before,
+#app-mount pre code[class~=gauss i]::before {
     content: "GAUSS";
 }
 
-#app-mount pre [class~=nc i]::before,
-#app-mount pre [class~=gcode i]::before {
+#app-mount pre code[class~=nc i]::before,
+#app-mount pre code[class~=gcode i]::before {
     content: "G-code (ISO 6983)";
 }
 
-#app-mount pre [class~=feature i]::before,
-#app-mount pre [class~=gherkin i]::before {
+#app-mount pre code[class~=feature i]::before,
+#app-mount pre code[class~=gherkin i]::before {
     content: "Gherkin";
 }
 
-#app-mount pre [class~=glsl i]::before {
+#app-mount pre code[class~=glsl i]::before {
     content: "GLSL";
 }
 
-#app-mount pre [class~=gml i]::before {
+#app-mount pre code[class~=gml i]::before {
     content: "GML";
 }
 
-#app-mount pre [class~=golang i]::before,
-#app-mount pre [class~=go i]::before {
+#app-mount pre code[class~=golang i]::before,
+#app-mount pre code[class~=go i]::before {
     content: "Go";
 }
 
-#app-mount pre [class~=golo i]::before {
+#app-mount pre code[class~=golo i]::before {
     content: "Golo";
 }
 
-#app-mount pre [class~=gradle i]::before {
+#app-mount pre code[class~=gradle i]::before {
     content: "Gradle";
 }
 
-#app-mount pre [class~=gql i]::before,
-#app-mount pre [class~=graphql i]::before {
+#app-mount pre code[class~=gql i]::before,
+#app-mount pre code[class~=graphql i]::before {
     content: "GraphQL";
 }
 
-#app-mount pre [class~=groovy i]::before {
+#app-mount pre code[class~=groovy i]::before {
     content: "Groovy";
 }
 
-#app-mount pre [class~=haml i]::before {
+#app-mount pre code[class~=haml i]::before {
     content: "HAML";
 }
 
-#app-mount pre [class~=htmlbars i]::before,
-#app-mount pre [class~=hbs i]::before,
-#app-mount pre [class~=handlebars i]::before {
+#app-mount pre code[class~=htmlbars i]::before,
+#app-mount pre code[class~=hbs i]::before,
+#app-mount pre code[class~=handlebars i]::before {
     content: "Handlebars";
 }
 
-#app-mount pre [class~=hs i]::before,
-#app-mount pre [class~=haskell i]::before {
+#app-mount pre code[class~=hs i]::before,
+#app-mount pre code[class~=haskell i]::before {
     content: "Haskell";
 }
 
-#app-mount pre [class~=hx i]::before,
-#app-mount pre [class~=haxe i]::before {
+#app-mount pre code[class~=hx i]::before,
+#app-mount pre code[class~=haxe i]::before {
     content: "Haxe";
 }
 
-#app-mount pre [class~=hsp i]::before {
+#app-mount pre code[class~=hsp i]::before {
     content: "HSP";
 }
 
-#app-mount pre [class~=https i]::before,
-#app-mount pre [class~=http i]::before {
+#app-mount pre code[class~=https i]::before,
+#app-mount pre code[class~=http i]::before {
     content: "HTTP";
 }
 
-#app-mount pre [class~=hy i]::before,
-#app-mount pre [class~=hylang i]::before {
+#app-mount pre code[class~=hy i]::before,
+#app-mount pre code[class~=hylang i]::before {
     content: "Hy";
 }
 
-#app-mount pre [class~=i7 i]::before,
-#app-mount pre [class~=inform7 i]::before {
+#app-mount pre code[class~=i7 i]::before,
+#app-mount pre code[class~=inform7 i]::before {
     content: "Inform 7";
 }
 
-#app-mount pre [class~=toml i]::before,
-#app-mount pre [class~=TOML i]::before {
+#app-mount pre code[class~=toml i]::before,
+#app-mount pre code[class~=TOML i]::before {
     content: "TOML";
 }
 
 /* For familiarity */
-#app-mount pre [class~=ini i]::before {
+#app-mount pre code[class~=ini i]::before {
     content: "Initialization File";
 }
 
-#app-mount pre [class~=irpf90 i]::before {
+#app-mount pre code[class~=irpf90 i]::before {
     content: "IRPF90";
 }
 
-#app-mount pre [class~=isbl i]::before {
+#app-mount pre code[class~=isbl i]::before {
     content: "ISBL";
 }
 
-#app-mount pre [class~=jsp i]::before,
-#app-mount pre [class~=java i]::before {
+#app-mount pre code[class~=jsp i]::before,
+#app-mount pre code[class~=java i]::before {
     content: "Java";
 }
 
-#app-mount pre [class~=javascript i]::before,
-#app-mount pre [class~=js i]::before {
+#app-mount pre code[class~=javascript i]::before,
+#app-mount pre code[class~=js i]::before {
     content: "JavaScript";
 }
 
-#app-mount pre [class~=jsx i]::before {
+#app-mount pre code[class~=jsx i]::before {
     content: "JavaScript XML";
 }
 
-#app-mount pre [class~=cjs i]::before {
+#app-mount pre code[class~=cjs i]::before {
     content: "CommonJS modules";
 }
 
-#app-mount pre [class~=mjs i]::before {
+#app-mount pre code[class~=mjs i]::before {
     content: "ECMAScript Modules";
 }
 
-#app-mount pre [class~=jboss-cli i]::before {
+#app-mount pre code[class~=jboss-cli i]::before {
     content: "JBoss CLI";
 }
 
 /* For familiarity */
-#app-mount pre [class~=wildfly-cli i]::before {
+#app-mount pre code[class~=wildfly-cli i]::before {
     content: "WildFly CLI";
 }
 
-#app-mount pre [class~=json i]::before {
+#app-mount pre code[class~=json i]::before {
     content: "JSON";
 }
 
-#app-mount pre [class~=julia i]::before {
+#app-mount pre code[class~=julia i]::before {
     content: "Julia";
 }
 
-#app-mount pre [class~=jldoctest i]::before,
-#app-mount pre [class~=julia-repl i]::before {
+#app-mount pre code[class~=jldoctest i]::before,
+#app-mount pre code[class~=julia-repl i]::before {
     content: "Julia REPL";
 }
 
-#app-mount pre [class~=kt i]::before,
-#app-mount pre [class~=kts i]::before,
-#app-mount pre [class~=kotlin i]::before {
+#app-mount pre code[class~=kt i]::before,
+#app-mount pre code[class~=kts i]::before,
+#app-mount pre code[class~=kotlin i]::before {
     content: "Kotlin";
 }
 
-#app-mount pre [class~=ls i]::before,
-#app-mount pre [class~=lasso i]::before,
-#app-mount pre [class~=lassocript i]::before {
+#app-mount pre code[class~=ls i]::before,
+#app-mount pre code[class~=lasso i]::before,
+#app-mount pre code[class~=lassocript i]::before {
     content: "Lasso";
 }
 
-#app-mount pre [class~=tex i]::before,
-#app-mount pre [class~=letex i]::before {
+#app-mount pre code[class~=tex i]::before,
+#app-mount pre code[class~=letex i]::before {
     content: "LaTeX";
 }
 
-#app-mount pre [class~=ldif i]::before {
+#app-mount pre code[class~=ldif i]::before {
     content: "LDIF";
 }
 
-#app-mount pre [class~=leaf i]::before {
+#app-mount pre code[class~=leaf i]::before {
     content: "Leaf";
 }
 
-#app-mount pre [class~=less i]::before {
+#app-mount pre code[class~=less i]::before {
     content: "Less";
 }
 
-#app-mount pre [class~=lisp i]::before {
+#app-mount pre code[class~=lisp i]::before {
     content: "Lisp";
 }
 
-#app-mount pre [class~=livecodeserver i]::before {
+#app-mount pre code[class~=livecodeserver i]::before {
     content: "LiveCode";
 }
 
-#app-mount pre [class~=ls i]::before,
-#app-mount pre [class~=livescript i]::before {
+#app-mount pre code[class~=ls i]::before,
+#app-mount pre code[class~=livescript i]::before {
     content: "LiveScript";
 }
 
-#app-mount pre [class~=llvm i]::before {
+#app-mount pre code[class~=llvm i]::before {
     content: "LLVM IR";
 }
 
-#app-mount pre [class~=lsl i]::before {
+#app-mount pre code[class~=lsl i]::before {
     content: "LSL";
 }
 
-#app-mount pre [class~=lua i]::before {
+#app-mount pre code[class~=lua i]::before {
     content: "Lua";
 }
 
-#app-mount pre [class~=make i]::before,
-#app-mount pre [class~=mak i]::before,
-#app-mount pre [class~=mk i]::before,
-#app-mount pre [class~=makefile i]::before {
+#app-mount pre code[class~=make i]::before,
+#app-mount pre code[class~=mak i]::before,
+#app-mount pre code[class~=mk i]::before,
+#app-mount pre code[class~=makefile i]::before {
     content: "Makefile";
 }
 
-#app-mount pre [class~=mkd i]::before,
-#app-mount pre [class~=mkdown i]::before,
-#app-mount pre [class~=markdown i]::before,
-#app-mount pre [class~=md i]::before {
+#app-mount pre code[class~=mkd i]::before,
+#app-mount pre code[class~=mkdown i]::before,
+#app-mount pre code[class~=markdown i]::before,
+#app-mount pre code[class~=md i]::before {
     content: "Markdown";
 }
 
-#app-mount pre [class~=wl i]::before,
-#app-mount pre [class~=mma i]::before,
-#app-mount pre [class~=mathematica i]::before {
+#app-mount pre code[class~=wl i]::before,
+#app-mount pre code[class~=mma i]::before,
+#app-mount pre code[class~=mathematica i]::before {
     content: "Mathematica";
 }
 
-#app-mount pre [class~=matlab i]::before {
+#app-mount pre code[class~=matlab i]::before {
     content: "Matlab";
 }
 
-#app-mount pre [class~=maxima i]::before {
+#app-mount pre code[class~=maxima i]::before {
     content: "Maxima";
 }
 
-#app-mount pre [class~=mel i]::before {
+#app-mount pre code[class~=mel i]::before {
     content: "MEL";
 }
 
-#app-mount pre [class~=moo i]::before,
-#app-mount pre [class~=m i]::before,
-#app-mount pre [class~=mercury i]::before {
+#app-mount pre code[class~=moo i]::before,
+#app-mount pre code[class~=m i]::before,
+#app-mount pre code[class~=mercury i]::before {
     content: "Mercury";
 }
 
-#app-mount pre [class~=mips i]::before,
-#app-mount pre [class~=mipsasm i]::before {
+#app-mount pre code[class~=mips i]::before,
+#app-mount pre code[class~=mipsasm i]::before {
     content: "MIPS Assembly";
 }
 
-#app-mount pre [class~=mizar i]::before {
+#app-mount pre code[class~=mizar i]::before {
     content: "Mizar";
 }
 
-#app-mount pre [class~=mojolicious i]::before {
+#app-mount pre code[class~=mojolicious i]::before {
     content: "Mojilicious";
 }
 
-#app-mount pre [class~=monkey i]::before {
+#app-mount pre code[class~=monkey i]::before {
     content: "Monkey";
 }
 
-#app-mount pre [class~=moon i]::before,
-#app-mount pre [class~=moonscript i]::before {
+#app-mount pre code[class~=moon i]::before,
+#app-mount pre code[class~=moonscript i]::before {
     content: "MoonScript";
 }
 
-#app-mount pre [class~=n1ql i]::before {
+#app-mount pre code[class~=n1ql i]::before {
     content: "N1QL";
 }
 
-#app-mount pre [class~=nestedtext i]::before,
-#app-mount pre [class~=nt i]::before {
+#app-mount pre code[class~=nestedtext i]::before,
+#app-mount pre code[class~=nt i]::before {
     content: "Nested Text";
 }
 
-#app-mount pre [class~=nginxconf i]::before,
-#app-mount pre [class~=nginx i]::before {
+#app-mount pre code[class~=nginxconf i]::before,
+#app-mount pre code[class~=nginx i]::before {
     content: "NGINX config";
 }
 
-#app-mount pre [class~=nim i]::before {
+#app-mount pre code[class~=nim i]::before {
     content: "Nim";
 }
 
-#app-mount pre [class~=nixos i]::before,
-#app-mount pre [class~=nix i]::before {
+#app-mount pre code[class~=nixos i]::before,
+#app-mount pre code[class~=nix i]::before {
     content: "Nix config";
 }
 
-#app-mount pre [class~=node-repl i]::before {
+#app-mount pre code[class~=node-repl i]::before {
     content: "Node REPL";
 }
 
-#app-mount pre [class~=nsis i]::before {
+#app-mount pre code[class~=nsis i]::before {
     content: "NSIS";
 }
 
-#app-mount pre [class~=objective-c++i]::before,
-#app-mount pre [class~=obj-c++i]::before,
-#app-mount pre [class~=obj-c i]::before,
-#app-mount pre [class~=objc i]::before,
-#app-mount pre [class~=mm i]::before,
-#app-mount pre [class~=objectivec i]::before {
+#app-mount pre code[class~=objective-c++ i]::before,
+#app-mount pre code[class~=obj-c++ i]::before,
+#app-mount pre code[class~=obj-c i]::before,
+#app-mount pre code[class~=objc i]::before,
+#app-mount pre code[class~=mm i]::before,
+#app-mount pre code[class~=objectivec i]::before {
     content: "Objective-C";
 }
 
-#app-mount pre [class~=ml i]::before,
-#app-mount pre [class~=ocaml i]::before {
+#app-mount pre code[class~=ml i]::before,
+#app-mount pre code[class~=ocaml i]::before {
     content: "OCaml";
 }
 
-#app-mount pre [class~=scad i]::before,
-#app-mount pre [class~=openscad i]::before {
+#app-mount pre code[class~=scad i]::before,
+#app-mount pre code[class~=openscad i]::before {
     content: "OpenSCAD";
 }
 
-#app-mount pre [class~=oxygene i]::before {
+#app-mount pre code[class~=oxygene i]::before {
     content: "Oxygene";
 }
 
-#app-mount pre [class~=parser3 i]::before {
+#app-mount pre code[class~=parser3 i]::before {
     content: "Parser3";
 }
 
-#app-mount pre [class~=pm i]::before,
-#app-mount pre [class~=pl i]::before,
-#app-mount pre [class~=perl i]::before {
+#app-mount pre code[class~=pm i]::before,
+#app-mount pre code[class~=pl i]::before,
+#app-mount pre code[class~=perl i]::before {
     content: "Perl";
 }
 
-#app-mount pre [class~=pf i]::before {
+#app-mount pre code[class~=pf i]::before {
     content: "Packet Filter config";
 }
 
-#app-mount pre [class~=postgresql i]::before,
-#app-mount pre [class~=postgres i]::before,
-#app-mount pre [class~=pgsql i]::before {
+#app-mount pre code[class~=postgresql i]::before,
+#app-mount pre code[class~=postgres i]::before,
+#app-mount pre code[class~=pgsql i]::before {
     content: "PostgreSQL";
 }
 
-#app-mount pre [class~=php i]::before {
+#app-mount pre code[class~=php i]::before {
     content: "PHP";
 }
 
-#app-mount pre [class~=php-template i]::before {
+#app-mount pre code[class~=php-template i]::before {
     content: "PHP template";
 }
 
-#app-mount pre [class~=pony i]::before {
+#app-mount pre code[class~=pony i]::before {
     content: "Pony";
 }
 
-#app-mount pre [class~=ps1 i]::before,
-#app-mount pre [class~=ps i]::before,
-#app-mount pre [class~=pwsh i]::before,
-#app-mount pre [class~=powershell i]::before {
+#app-mount pre code[class~=ps1 i]::before,
+#app-mount pre code[class~=ps i]::before,
+#app-mount pre code[class~=pwsh i]::before,
+#app-mount pre code[class~=powershell i]::before {
     content: "PowerShell script";
 }
 
-#app-mount pre [class~=pde i]::before,
-#app-mount pre [class~=processing i]::before {
+#app-mount pre code[class~=pde i]::before,
+#app-mount pre code[class~=processing i]::before {
     content: "Processing";
 }
 
-#app-mount pre [class~=profile i]::before {
+#app-mount pre code[class~=profile i]::before {
     content: "Python profiler";
 }
 
-#app-mount pre [class~=prolog i]::before {
+#app-mount pre code[class~=prolog i]::before {
     content: "Prolog";
 }
 
-#app-mount pre [class~=properties i]::before {
+#app-mount pre code[class~=properties i]::before {
     content: ".properties";
 }
 
-#app-mount pre [class~=protobuf i]::before {
+#app-mount pre code[class~=protobuf i]::before {
     content: "Protocol Buffers";
 }
 
-#app-mount pre [class~=puppet i]::before,
-#app-mount pre [class~=pp i]::before {
+#app-mount pre code[class~=puppet i]::before,
+#app-mount pre code[class~=pp i]::before {
     content: "Puppet";
 }
 
-#app-mount pre [class~=pbi i]::before,
-#app-mount pre [class~=pb i]::before,
-#app-mount pre [class~=purebasic i]::before {
+#app-mount pre code[class~=pbi i]::before,
+#app-mount pre code[class~=pb i]::before,
+#app-mount pre code[class~=purebasic i]::before {
     content: "PureBASIC";
 }
 
-#app-mount pre [class~=ipython i]::before,
-#app-mount pre [class~=gyp i]::before,
-#app-mount pre [class~=py i]::before,
-#app-mount pre [class~=python i]::before {
+#app-mount pre code[class~=ipython i]::before,
+#app-mount pre code[class~=gyp i]::before,
+#app-mount pre code[class~=py i]::before,
+#app-mount pre code[class~=python i]::before {
     content: "Python";
 }
 
-#app-mount pre [class~=python-repl i]::before,
-#app-mount pre [class~=pycn i]::before {
+#app-mount pre code[class~=python-repl i]::before,
+#app-mount pre code[class~=pycn i]::before {
     content: "Python REPL";
 }
 
-#app-mount pre [class~=kdb i]::before,
-#app-mount pre [class~=k i]::before,
-#app-mount pre [class~=q i]::before {
+#app-mount pre code[class~=kdb i]::before,
+#app-mount pre code[class~=k i]::before,
+#app-mount pre code[class~=q i]::before {
     content: "Q";
 }
 
-#app-mount pre [class~=qt i]::before,
-#app-mount pre [class~=qml i]::before {
+#app-mount pre code[class~=qt i]::before,
+#app-mount pre code[class~=qml i]::before {
     content: "QML";
 }
 
-#app-mount pre [class~=r i]::before {
+#app-mount pre code[class~=r i]::before {
     content: "R";
 }
 
-#app-mount pre [class~=re i]::before,
-#app-mount pre [class~=reasonml i]::before {
+#app-mount pre code[class~=re i]::before,
+#app-mount pre code[class~=reasonml i]::before {
     content: "ReasonML";
 }
 
-#app-mount pre [class~=rib i]::before {
+#app-mount pre code[class~=rib i]::before {
     content: "RenderMan RIB";
 }
 
-#app-mount pre [class~=instances i]::before,
-#app-mount pre [class~=graph i]::before,
-#app-mount pre [class~=roboconf i]::before {
+#app-mount pre code[class~=instances i]::before,
+#app-mount pre code[class~=graph i]::before,
+#app-mount pre code[class~=roboconf i]::before {
     content: "Roboconf";
 }
 
-#app-mount pre [class~=mikrotik i]::before,
-#app-mount pre [class~=routeros i]::before {
+#app-mount pre code[class~=mikrotik i]::before,
+#app-mount pre code[class~=routeros i]::before {
     content: "MikroTik RouterOS script";
 }
 
-#app-mount pre [class~=rsl i]::before {
+#app-mount pre code[class~=rsl i]::before {
     content: "RenderMan RSL";
 }
 
-#app-mount pre [class~=irb i]::before,
-#app-mount pre [class~=thor i]::before,
-#app-mount pre [class~=podspec i]::before,
-#app-mount pre [class~=gemspec i]::before,
-#app-mount pre [class~=rb i]::before,
-#app-mount pre [class~=ruby i]::before {
+#app-mount pre code[class~=irb i]::before,
+#app-mount pre code[class~=thor i]::before,
+#app-mount pre code[class~=podspec i]::before,
+#app-mount pre code[class~=gemspec i]::before,
+#app-mount pre code[class~=rb i]::before,
+#app-mount pre code[class~=ruby i]::before {
     content: "Ruby";
 }
 
-#app-mount pre [class~=ruleslanguage i]::before {
+#app-mount pre code[class~=ruleslanguage i]::before {
     content: "Oracle Rules Language";
 }
 
-#app-mount pre [class~=rs i]::before,
-#app-mount pre [class~=rust i]::before {
+#app-mount pre code[class~=rs i]::before,
+#app-mount pre code[class~=rust i]::before {
     content: "Rust";
 }
 
-#app-mount pre [class~=sas i]::before {
+#app-mount pre code[class~=sas i]::before {
     content: "SAS";
 }
 
-#app-mount pre [class~=scala i]::before {
+#app-mount pre code[class~=scala i]::before {
     content: "Scala";
 }
 
-#app-mount pre [class~=scm i]::before,
-#app-mount pre [class~=scheme i]::before {
+#app-mount pre code[class~=scm i]::before,
+#app-mount pre code[class~=scheme i]::before {
     content: "Scheme";
 }
 
-#app-mount pre [class~=sci i]::before,
-#app-mount pre [class~=scilab i]::before {
+#app-mount pre code[class~=sci i]::before,
+#app-mount pre code[class~=scilab i]::before {
     content: "Scilab";
 }
 
-#app-mount pre [class~=sass i]::before,
-#app-mount pre [class~=scss i]::before {
+#app-mount pre code[class~=sass i]::before,
+#app-mount pre code[class~=scss i]::before {
     content: "SCSS";
 }
 
-#app-mount pre [class~=shell i]::before,
-#app-mount pre [class~=console i]::before,
-#app-mount pre [class~=shellsession i]::before {
+#app-mount pre code[class~=shell i]::before,
+#app-mount pre code[class~=console i]::before,
+#app-mount pre code[class~=shellsession i]::before {
     content: "Shell Session";
 }
 
-#app-mount pre [class~=smali i]::before {
+#app-mount pre code[class~=smali i]::before {
     content: "Smali";
 }
 
-#app-mount pre [class~=st i]::before,
-#app-mount pre [class~=smalltalk i]::before {
+#app-mount pre code[class~=st i]::before,
+#app-mount pre code[class~=smalltalk i]::before {
     content: "Smalltalk";
 }
 
-#app-mount pre [class~=ml i]::before #app-mount pre [class~=sml i]::before {
+#app-mount pre code[class~=ml i]::before,
+#app-mount pre code[class~=sml i]::before {
     content: "SML (Standard ML)";
 }
 
-#app-mount pre [class~=sqf i]::before {
+#app-mount pre code[class~=sqf i]::before {
     content: "SQF";
 }
 
-#app-mount pre [class~=sql i]::before {
+#app-mount pre code[class~=sql i]::before {
     content: "SQL";
 }
 
-#app-mount pre [class~=stanfuncs i]::before,
-#app-mount pre [class~=stan i]::before {
+#app-mount pre code[class~=stanfuncs i]::before,
+#app-mount pre code[class~=stan i]::before {
     content: "Stan";
 }
 
-#app-mount pre [class~=ado i]::before,
-#app-mount pre [class~=do i]::before,
-#app-mount pre [class~=stata i]::before {
+#app-mount pre code[class~=ado i]::before,
+#app-mount pre code[class~=do i]::before,
+#app-mount pre code[class~=stata i]::before {
     content: "Stata";
 }
 
-#app-mount pre [class~=stp i]::before,
-#app-mount pre [class~=step i]::before,
-#app-mount pre [class~=p21 i]::before,
-#app-mount pre [class~=step21 i]::before {
+#app-mount pre code[class~=stp i]::before,
+#app-mount pre code[class~=step i]::before,
+#app-mount pre code[class~=p21 i]::before,
+#app-mount pre code[class~=step21 i]::before {
     content: "STEP Part 21";
 }
 
-#app-mount pre [class~=styl i]::before,
-#app-mount pre [class~=stylus i]::before {
+#app-mount pre code[class~=styl i]::before,
+#app-mount pre code[class~=stylus i]::before {
     content: "Stylus";
 }
 
-#app-mount pre [class~=subunit i]::before {
+#app-mount pre code[class~=subunit i]::before {
     content: "SubUnit";
 }
 
-#app-mount pre [class~=swift i]::before {
+#app-mount pre code[class~=swift i]::before {
     content: "Swift";
 }
 
-#app-mount pre [class~=taggerscript i]::before {
+#app-mount pre code[class~=taggerscript i]::before {
     content: "Tagger Script";
 }
 
-#app-mount pre [class~=tap i]::before {
+#app-mount pre code[class~=tap i]::before {
     content: "Test Anything Protocol";
 }
 
-#app-mount pre [class~=tk i]::before,
-#app-mount pre [class~=tcl i]::before {
+#app-mount pre code[class~=tk i]::before,
+#app-mount pre code[class~=tcl i]::before {
     content: "Tcl";
 }
 
-#app-mount pre [class~=thrift i]::before {
+#app-mount pre code[class~=thrift i]::before {
     content: "Thrift";
 }
 
-#app-mount pre [class~=tp i]::before {
+#app-mount pre code[class~=tp i]::before {
     content: "TP";
 }
 
-#app-mount pre [class~=craftcms i]::before,
-#app-mount pre [class~=twig i]::before {
+#app-mount pre code[class~=craftcms i]::before,
+#app-mount pre code[class~=twig i]::before {
     content: "Twig";
 }
 
-#app-mount pre [class~=tsx i]::before,
-#app-mount pre [class~=ts i]::before,
-#app-mount pre [class~=typescript i]::before {
+#app-mount pre code[class~=tsx i]::before,
+#app-mount pre code[class~=ts i]::before,
+#app-mount pre code[class~=typescript i]::before {
     content: "TypeScript";
 }
 
-#app-mount pre [class~=vala i]::before {
+#app-mount pre code[class~=vala i]::before {
     content: "Vala";
 }
 
-#app-mount pre [class~=vb i]::before,
-#app-mount pre [class~=vbnet i]::before {
+#app-mount pre code[class~=vb i]::before,
+#app-mount pre code[class~=vbnet i]::before {
     content: "Visual Basic .NET";
 }
 
-#app-mount pre [class~=visualbasic i]::before,
-#app-mount pre [class~=vbscript i]::before,
-#app-mount pre [class~=vbs i]::before {
+#app-mount pre code[class~=visualbasic i]::before,
+#app-mount pre code[class~=vbscript i]::before,
+#app-mount pre code[class~=vbs i]::before {
     content: "VBScript";
 }
 
-#app-mount pre [class~=vbscript-html i]::before {
+#app-mount pre code[class~=vbscript-html i]::before {
     content: "VBScript in HTML";
 }
 
-#app-mount pre [class~=svh i]::before,
-#app-mount pre [class~=sv i]::before,
-#app-mount pre [class~=v i]::before,
-#app-mount pre [class~=verilog i]::before {
+#app-mount pre code[class~=svh i]::before,
+#app-mount pre code[class~=sv i]::before,
+#app-mount pre code[class~=v i]::before,
+#app-mount pre code[class~=verilog i]::before {
     content: "Verilog";
 }
 
-#app-mount pre [class~=vhdl i]::before {
+#app-mount pre code[class~=vhdl i]::before {
     content: "VHDL";
 }
 
-#app-mount pre [class~=vim i]::before {
+#app-mount pre code[class~=vim i]::before {
     content: "Vim Script";
 }
 
-#app-mount pre [class~=wasm i]::before {
+#app-mount pre code[class~=wasm i]::before {
     content: "WebAssembly";
 }
 
-#app-mount pre [class~=wren i]::before {
+#app-mount pre code[class~=wren i]::before {
     content: "Wren";
 }
 
-#app-mount pre [class~=x86asm i]::before {
+#app-mount pre code[class~=x86asm i]::before {
     content: "Intel x86 Assembly";
 }
 
-#app-mount pre [class~=tao i]::before,
-#app-mount pre [class~=xl i]::before {
+#app-mount pre code[class~=tao i]::before,
+#app-mount pre code[class~=xl i]::before {
     content: "XL";
 }
 
-#app-mount pre [class~=plist i]::before,
-#app-mount pre [class~=xsl i]::before,
-#app-mount pre [class~=xjb i]::before,
-#app-mount pre [class~=atom i]::before,
-#app-mount pre [class~=rss i]::before,
-#app-mount pre [class~=xml i]::before {
+#app-mount pre code[class~=plist i]::before,
+#app-mount pre code[class~=xsl i]::before,
+#app-mount pre code[class~=xjb i]::before,
+#app-mount pre code[class~=atom i]::before,
+#app-mount pre code[class~=rss i]::before,
+#app-mount pre code[class~=xml i]::before {
     content: "XML";
 }
 
-#app-mount pre [class~=html i]::before {
+#app-mount pre code[class~=html i]::before {
     content: "HTML";
 }
 
 /* For familiarity */
-#app-mount pre [class~=xhtml i]::before {
+#app-mount pre code[class~=xhtml i]::before {
     content: "XHTML";
 }
 
-#app-mount pre [class~=svg i]::before {
+#app-mount pre code[class~=svg i]::before {
     content: "SVG";
 }
 
-#app-mount pre [class~=xq i]::before,
-#app-mount pre [class~=xpath i]::before,
-#app-mount pre [class~=xquery i]::before {
+#app-mount pre code[class~=xq i]::before,
+#app-mount pre code[class~=xpath i]::before,
+#app-mount pre code[class~=xquery i]::before {
     content: "XQuery";
 }
 
-#app-mount pre [class~=yml i]::before,
-#app-mount pre [class~=yaml i]::before {
+#app-mount pre code[class~=yml i]::before,
+#app-mount pre code[class~=yaml i]::before {
     content: "YAML";
 }
 
-#app-mount pre [class~=zephir i]::before,
-#app-mount pre [class~=zep i]::before {
+#app-mount pre code[class~=zephir i]::before,
+#app-mount pre code[class~=zep i]::before {
     content: "Zephir";
+}
+
+/* Not listed on highlight.js */
+#app-mount pre code[class~=ansi i]::before {
+    content: "ANSI";
 }
 
 #app-mount code,
@@ -1148,7 +1154,8 @@ html.theme-light .force-theme.theme-light {
     margin: 0 0;
 }
 
-#app-mount [class^=nonMediaAttachmentItem] pre {
+#app-mount [class^=nonMediaAttachmentItem] pre,
+#app-mount [class^=modalTextContainer] pre {
     border-radius: 8px 8px 0;
     border: 0;
 }
@@ -1178,54 +1185,54 @@ html.theme-light .force-theme.theme-light {
 }
 
 /* Config */
-#app-mount pre [class~=apache i]::before,
-#app-mount pre [class~=apacheconf i]::before,
-#app-mount pre [class~=pcmk i]::before,
-#app-mount pre [class~=crmsh i]::before,
-#app-mount pre [class~=crm i]::before,
-#app-mount pre [class~=zone i]::before,
-#app-mount pre [class~=bind i]::before,
-#app-mount pre [class~=dns i]::before,
-#app-mount pre [class~=docker i]::before,
-#app-mount pre [class~=dockerfile i]::before,
-#app-mount pre [class~=dsconfig i]::before,
-#app-mount pre [class~=dts i]::before,
-#app-mount pre [class~=ini i]::before,
-#app-mount pre [class~=toml i]::before,
-#app-mount pre [class~=jboss-cli i]::before,
-#app-mount pre [class~=wildfly-cli i]::before,
-#app-mount pre [class~=ldif i]::before,
-#app-mount pre [class~=nt i]::before,
-#app-mount pre [class~=nestedtext i]::before,
-#app-mount pre [class~=nginxconf i]::before,
-#app-mount pre [class~=nginx i]::before,
-#app-mount pre [class~=pf i]::before,
-#app-mount pre [class~=properties i]::before,
-#app-mount pre [class~=pp i]::before,
-#app-mount pre [class~=puppet i]::before,
-#app-mount pre [class~=instances i]::before,
-#app-mount pre [class~=graph i]::before,
-#app-mount pre [class~=roboconf i]::before,
-#app-mount pre [class~=yml i]::before,
-#app-mount pre [class~=yaml i]::before {
+#app-mount pre code[class~=apache i]::before,
+#app-mount pre code[class~=apacheconf i]::before,
+#app-mount pre code[class~=pcmk i]::before,
+#app-mount pre code[class~=crmsh i]::before,
+#app-mount pre code[class~=crm i]::before,
+#app-mount pre code[class~=zone i]::before,
+#app-mount pre code[class~=bind i]::before,
+#app-mount pre code[class~=dns i]::before,
+#app-mount pre code[class~=docker i]::before,
+#app-mount pre code[class~=dockerfile i]::before,
+#app-mount pre code[class~=dsconfig i]::before,
+#app-mount pre code[class~=dts i]::before,
+#app-mount pre code[class~=ini i]::before,
+#app-mount pre code[class~=toml i]::before,
+#app-mount pre code[class~=jboss-cli i]::before,
+#app-mount pre code[class~=wildfly-cli i]::before,
+#app-mount pre code[class~=ldif i]::before,
+#app-mount pre code[class~=nt i]::before,
+#app-mount pre code[class~=nestedtext i]::before,
+#app-mount pre code[class~=nginxconf i]::before,
+#app-mount pre code[class~=nginx i]::before,
+#app-mount pre code[class~=pf i]::before,
+#app-mount pre code[class~=properties i]::before,
+#app-mount pre code[class~=pp i]::before,
+#app-mount pre code[class~=puppet i]::before,
+#app-mount pre code[class~=instances i]::before,
+#app-mount pre code[class~=graph i]::before,
+#app-mount pre code[class~=roboconf i]::before,
+#app-mount pre code[class~=yml i]::before,
+#app-mount pre code[class~=yaml i]::before {
     -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M5.433 2.304A4.492 4.492 0 0 0 3.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 1 1-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 0 1 2 6a5.993 5.993 0 0 1 2.567-4.92 1.482 1.482 0 0 1 1.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 0 0 .28 0l.75-.51A.249.249 0 0 0 9 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 0 1 1.673.04A5.993 5.993 0 0 1 14 6a5.996 5.996 0 0 1-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.752.752 0 0 1-1.094.714.75.75 0 0 1-.404-.64l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.495 4.495 0 0 0 12.5 6a4.492 4.492 0 0 0-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 0 1-.767 1.448l-.75.51a1.75 1.75 0 0 1-1.966 0l-.75-.51A1.75 1.75 0 0 1 5.5 5.282V2.463c0-.092-.043-.142-.067-.159Z"></path></svg>') center/16px no-repeat !important;
     mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M5.433 2.304A4.492 4.492 0 0 0 3.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 1 1-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 0 1 2 6a5.993 5.993 0 0 1 2.567-4.92 1.482 1.482 0 0 1 1.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 0 0 .28 0l.75-.51A.249.249 0 0 0 9 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 0 1 1.673.04A5.993 5.993 0 0 1 14 6a5.996 5.996 0 0 1-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.752.752 0 0 1-1.094.714.75.75 0 0 1-.404-.64l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.495 4.495 0 0 0 12.5 6a4.492 4.492 0 0 0-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 0 1-.767 1.448l-.75.51a1.75 1.75 0 0 1-1.966 0l-.75-.51A1.75 1.75 0 0 1 5.5 5.282V2.463c0-.092-.043-.142-.067-.159Z"></path></svg>') center/16px no-repeat !important;
 }
 
 /* Template */
-#app-mount pre [class~=django i]::before,
-#app-mount pre [class~=jinja i]::before,
-#app-mount pre [class~=dust i]::before,
-#app-mount pre [class~=dst i]::before,
-#app-mount pre [class~=erb i]::before,
-#app-mount pre [class~=haml]::before,
-#app-mount pre [class~=htmlbars i]::before,
-#app-mount pre [class~=hbs i]::before,
-#app-mount pre [class~=handlebars i]::before,
-#app-mount pre [class~=mojolicious i]::before,
-#app-mount pre [class~=parser3 i]::before,
-#app-mount pre [class~=twig i]::before,
-#app-mount pre [class~=craftcms i]::before {
+#app-mount pre code[class~=django i]::before,
+#app-mount pre code[class~=jinja i]::before,
+#app-mount pre code[class~=dust i]::before,
+#app-mount pre code[class~=dst i]::before,
+#app-mount pre code[class~=erb i]::before,
+#app-mount pre code[class~=haml]::before,
+#app-mount pre code[class~=htmlbars i]::before,
+#app-mount pre code[class~=hbs i]::before,
+#app-mount pre code[class~=handlebars i]::before,
+#app-mount pre code[class~=mojolicious i]::before,
+#app-mount pre code[class~=parser3 i]::before,
+#app-mount pre code[class~=twig i]::before,
+#app-mount pre code[class~=craftcms i]::before {
     -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M1.5 1.75v1.562a.75.75 0 1 1-1.5 0V1.75C0 .784.784 0 1.75 0h1.562a.75.75 0 1 1 0 1.5H1.75a.25.25 0 0 0-.25.25ZM6.438 0h3.124a.75.75 0 1 1 0 1.5H6.438a.75.75 0 1 1 0-1.5Zm6.25 0h1.562C15.217 0 16 .784 16 1.75v1.562a.75.75 0 1 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-1.562a.75.75 0 1 1 0-1.5ZM1.5 6.438v3.124a.75.75 0 1 1-1.5 0V6.438a.75.75 0 1 1 1.5 0Zm14.5 0v3.124a.75.75 0 1 1-1.5 0V6.438a.75.75 0 1 1 1.5 0Zm-14.5 6.25v1.562c0 .138.112.25.25.25h1.562a.75.75 0 1 1 0 1.5H1.75A1.75 1.75 0 0 1 0 14.25v-1.562a.75.75 0 1 1 1.5 0Zm14.5 0v1.562A1.75 1.75 0 0 1 14.25 16h-1.562a.75.75 0 1 1 0-1.5h1.562a.25.25 0 0 0 .25-.25v-1.562a.75.75 0 1 1 1.5 0ZM6.438 14.5h3.124a.75.75 0 1 1 0 1.5H6.438a.75.75 0 1 1 0-1.5ZM6.5 3v1A.75.75 0 0 1 5 4V3a.75.75 0 0 1 1.5 0ZM2.25 5.75A.75.75 0 0 1 3 5h1a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75Zm4.5 0A.75.75 0 0 1 7.5 5h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75Zm-1 1a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75Zm.75 4v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0Zm3.5-5a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>') center/16px no-repeat !important;
     mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M1.5 1.75v1.562a.75.75 0 1 1-1.5 0V1.75C0 .784.784 0 1.75 0h1.562a.75.75 0 1 1 0 1.5H1.75a.25.25 0 0 0-.25.25ZM6.438 0h3.124a.75.75 0 1 1 0 1.5H6.438a.75.75 0 1 1 0-1.5Zm6.25 0h1.562C15.217 0 16 .784 16 1.75v1.562a.75.75 0 1 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-1.562a.75.75 0 1 1 0-1.5ZM1.5 6.438v3.124a.75.75 0 1 1-1.5 0V6.438a.75.75 0 1 1 1.5 0Zm14.5 0v3.124a.75.75 0 1 1-1.5 0V6.438a.75.75 0 1 1 1.5 0Zm-14.5 6.25v1.562c0 .138.112.25.25.25h1.562a.75.75 0 1 1 0 1.5H1.75A1.75 1.75 0 0 1 0 14.25v-1.562a.75.75 0 1 1 1.5 0Zm14.5 0v1.562A1.75 1.75 0 0 1 14.25 16h-1.562a.75.75 0 1 1 0-1.5h1.562a.25.25 0 0 0 .25-.25v-1.562a.75.75 0 1 1 1.5 0ZM6.438 14.5h3.124a.75.75 0 1 1 0 1.5H6.438a.75.75 0 1 1 0-1.5ZM6.5 3v1A.75.75 0 0 1 5 4V3a.75.75 0 0 1 1.5 0ZM2.25 5.75A.75.75 0 0 1 3 5h1a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75Zm4.5 0A.75.75 0 0 1 7.5 5h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75Zm-1 1a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75Zm.75 4v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0Zm3.5-5a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>') center/16px no-repeat !important;
 }
@@ -1257,6 +1264,7 @@ html.theme-light .force-theme.theme-light {
 }
 
 /* Shell */
+#app-mount pre code[class~=ansi i]::after,
 #app-mount pre code[class~=dos i]::after,
 #app-mount pre code[class~=bat i]::after,
 #app-mount pre code[class~=cmd i]::after,
